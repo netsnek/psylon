@@ -47,7 +47,7 @@ To get started with Pylon, you'll first need to set up [Node.js](https://nodejs.
 To create a new Pylon project, run the following command:
 
 ```bash
-npm create pylon my-pylon@latest
+npm create psylon my-pylon@latest
 ```
 
 <Callout type="note" title="Info">
@@ -85,7 +85,7 @@ All further examples in this guide will use the Bun runtime. If you are using a 
 Here's an example of a basic Pylon service:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -185,7 +185,7 @@ Pylon can be used to build a wide range of applications, from simple APIs to com
 The following example fetches a list of starships from the Star Wars API using the `fetch` function:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 interface Starship {
   name: string
@@ -214,7 +214,7 @@ Although the fetch returns a much larger object, Pylon will only return the data
 The following example defines a simple mutation that adds two numbers together:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Mutation: {
@@ -234,7 +234,7 @@ The following example defines a custom Star Wars API using a class to manage a
 list of characters:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 class StarWarsStore {
   private characters = [
@@ -301,7 +301,7 @@ You can define custom classes and interfaces to manage your data and use them in
 To show the power of Pylon, the next example returns the `Math` class of the JavaScript standard library:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Mutation: {
@@ -324,7 +324,7 @@ By default, Pylon masks all errors to prevent leaking sensitive information to t
 When using the `ServiceError` class, you can define custom error messages and status codes:
 
 ```typescript copy
-import {app, ServiceError} from '@getcronit/pylon'
+import {app, ServiceError} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -343,7 +343,7 @@ export default app
 You can also use the `details` property to provide additional information about the error:
 
 ```typescript copy
-import {app, ServiceError} from '@getcronit/pylon'
+import {app, ServiceError} from 'psylon'
 
 export const graphql = {
   Query: {

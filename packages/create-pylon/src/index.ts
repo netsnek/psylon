@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 
 import {Option, program, type Command} from 'commander'
 import {consola} from 'consola'
@@ -7,7 +10,7 @@ import path from 'path'
 import chalk from 'chalk'
 import * as fs from 'fs'
 
-import * as telemetry from '@getcronit/pylon-telemetry'
+import * as telemetry from '@netsnek/psylon-telemetry'
 
 import {fileURLToPath} from 'url'
 import {dirname} from 'path'
@@ -186,7 +189,7 @@ const createTemplate = async (options: {
 
     // If the target ends with `.example`, remove the suffix.
     // This is useful for `.gitignore.example` files because they are not published in
-    // the `create-pylon` package when named `.gitignore`.
+    // the `create-psylon` package when named `.gitignore`.
     if (target.endsWith('.example')) {
       target = target.replace('.example', '')
     }
@@ -210,7 +213,7 @@ const createTemplate = async (options: {
 
     // If the target ends with `.example`, remove the suffix.
     // This is useful for `.gitignore.example` files because they are not published in
-    // the `create-pylon` package when named `.gitignore`.
+    // the `create-psylon` package when named `.gitignore`.
     if (target.endsWith('.example')) {
       target = target.replace('.example', '')
     }
@@ -271,7 +274,7 @@ const installDependencies = async (args: {
 }
 
 program
-  .name('create-pylon')
+  .name('create-psylon')
   .version(version)
   .arguments('[target]')
   .addOption(new Option('-i, --install', 'Install dependencies'))

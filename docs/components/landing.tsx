@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -175,7 +178,7 @@ export function Landing() {
                 <div className="h-3 w-3 rounded-full bg-green-500"></div>
               </div>
               <ClipboardButton
-                text="npm create pylon@latest"
+                text="npm create psylon@latest"
                 variant="ghost"
                 size="icon"
                 className="text-muted-foreground/80 hover:text-muted-foreground">

@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import {MiddlewareHandler} from 'hono'
 import jwt from 'jsonwebtoken'
 import type {IdTokenClaims, IntrospectionResponse} from 'openid-client'
@@ -7,7 +10,7 @@ import {ContentfulStatusCode} from 'hono/utils/http-status'
 import {env} from 'hono/adapter'
 import * as Sentry from '@sentry/bun'
 import {existsSync, readFileSync} from 'fs'
-import {sendFunctionEvent} from '@getcronit/pylon-telemetry'
+import {sendFunctionEvent} from '@netsnek/psylon-telemetry'
 
 export type AuthState = IntrospectionResponse &
   IdTokenClaims & {

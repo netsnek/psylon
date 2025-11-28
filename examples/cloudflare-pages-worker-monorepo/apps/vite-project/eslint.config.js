@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'

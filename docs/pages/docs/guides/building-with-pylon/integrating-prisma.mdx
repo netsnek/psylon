@@ -110,7 +110,7 @@ You can of course skip providing a type for the return value, we just do it here
 The only thing left to do is to register this function in Pylon. We will do it just like we did in the previous chapters:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import {getBookings} from './lib/bookingStore'
 
 export const graphql = {
@@ -204,7 +204,7 @@ Regardless of the schema, we currently expect the client to send us the checkin 
 The last step we need to do is to register this function in Pylon:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import {addBooking, getBookings} from './lib/bookingStore'
 
 export const graphql = {

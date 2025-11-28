@@ -5,21 +5,21 @@
 ## Introduction
 
 This is a reference for upgrading your Pylon from v1 to v2. Version 2 introduces the support for various runtimes, a new npm create command, and an improved development server.
-The official supported runtimes by the `npm create pylon` command are Bun, Node.js and Cloudflare Workers. Other runtimes are also supported but require manual setup.
+The official supported runtimes by the `npm create psylon` command are Bun, Node.js and Cloudflare Workers. Other runtimes are also supported but require manual setup.
 If you’re curious what’s new, head over to the [v2.0 Release Notes](./v2.0.mdx).
 
 For most users we expect a smooth upgrade path as only a couple of changes will be required:
 
 ## Updating your dependencies
 
-You need to update your dependencies to the latest version of Pylon. The `@getcronit/pylon-cli` and `@getcronit/pylon-server` are no longer required and replaced by the `@getcronit/pylon-dev` package.
+You need to update your dependencies to the latest version of Pylon. The `psylon-cli` and `psylon-server` are no longer required and replaced by the `@netsnek/psylon-dev` package.
 
 ### Update Pylon version
 
 ```json
 {
   "dependencies": {
-    "@getcronit/pylon": "^2.0.0"
+    "psylon": "^2.0.0"
   }
 }
 ```
@@ -29,9 +29,9 @@ You need to update your dependencies to the latest version of Pylon. The `@getcr
 ```diff
 {
   "devDependencies": {
--    "@getcronit/pylon-cli": "^1.0.0",
--    "@getcronit/pylon-server": "^1.0.0"
-+    "@getcronit/pylon-dev": "^2.0.0"
+-    "psylon-cli": "^1.0.0",
+-    "psylon-server": "^1.0.0"
++    "@netsnek/psylon-dev": "^2.0.0"
   }
 }
 ```
@@ -76,7 +76,7 @@ This allows for supporting multiple runtimes that depend on the default export.
 **Before**
 
 ```typescript
-import {defineService} from '@getcronit/pylon'
+import {defineService} from 'psylon'
 
 export default defineService({
   graphql: {
@@ -93,7 +93,7 @@ export default defineService({
 **After**
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -114,7 +114,7 @@ The `app` instance is now used to define custom routes and middleware. This chan
 **Before**
 
 ```typescript
-import {PylonAPI} from '@getcronit/pylon'
+import {PylonAPI} from 'psylon'
 
 export const configureApp: PylonAPI['configureApp'] = app => {
   app.get('/hello', (ctx, next) => {
@@ -126,7 +126,7 @@ export const configureApp: PylonAPI['configureApp'] = app => {
 **After**
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 app.get('/hello', (ctx, next) => {
   return new Response('Hello, world!')
@@ -141,7 +141,7 @@ If you know of a good solution, [please let us know](https://github.com/getcroni
 Instead of using the `logger` instance, please use `console` for logging, or your favorite logging library.
 
 ```diff
-- import { logger } from "@getcronit/pylon";
+- import { logger } from "psylon";
 
 - logger.info("Hello, world!");
 + console.log("Hello, world!");

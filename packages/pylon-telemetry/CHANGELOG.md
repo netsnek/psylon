@@ -1,4 +1,4 @@
-# @getcronit/pylon-telemetry
+# @netsnek/psylon-telemetry
 
 ## 1.0.4
 

@@ -1,12 +1,18 @@
-![Pylon cover](https://github.com/user-attachments/assets/c28e49b2-5672-4849-826e-8b2eab0360cc)
+<p align="center">
+  <a href="https://netsnek.com/" target="_blank" rel="noopener noreferrer">
+    <img src="https://avatars.githubusercontent.com/u/148873257?s=400&u=db7fa77c9a2a16eec51871024811abd21f734787&v=4" alt="SNEK Logo" height="150">
+  </a>
+</p>
 
-<div align="center"><strong>Pylon</strong></div>
+![Psylon cover](https://github.com/user-attachments/assets/c28e49b2-5672-4849-826e-8b2eab0360cc)
+
+<div align="center"><strong>Psylon</strong></div>
 <div align="center">The next generation of building APIs.<br />Automatic schema generation for your service logic.</div>
 <br />
 <div align="center">
-<a href="https://pylon.cronit.io">Website</a> 
+<a href="https://pylon.cronit.io">Website</a>
 <span> · </span>
-<a href="https://github.com/getcronit/pylon">GitHub</a> 
+<a href="https://github.com/netsnek/psylon">GitHub</a>
 <span> · </span>
 <a href="https://discord.com/invite/cbJjkVrnHe">Discord</a>
 
@@ -14,7 +20,7 @@
 <br />
 
 [![Documentation](https://img.shields.io/badge/documentation-documentation?color=000000)](https://pylon.cronit.io/docs)
-[![NPM](https://img.shields.io/npm/v/%40getcronit%2Fpylon)](https://www.npmjs.com/package/@getcronit/pylon)
+[![NPM](https://img.shields.io/npm/v/psylon)](https://www.npmjs.com/package/psylon)
 [![Discord](https://img.shields.io/discord/1270327745662029854)](https://discord.com/invite/cbJjkVrnHe)
 
 </div>
@@ -45,7 +51,7 @@ We would love to hear your feedback and suggestions for new features. Please ope
 - [ ] **Better Prisma Integration:** Improve the integration with Prisma to provide a more seamless experience when working with databases. This includes better support for relations, pagination, and other features provided by Prisma. The main pain point is that prisma does not include relations by default, so a lot of manual work is required to add them. To solve this, we would like to leverage the prisma client extensions to automatically resolve relations and provide paginatable connections.
 - [ ] **Find Edge Cases:** Find edge cases where the generated schema does not match the service logic, or build errors occur. This will help to improve the overall stability of the framework and provide a better developer experience.
 - [ ] **Fix the Sentry Integration:** Currently, the Sentry integration is not working as expected. We would like to fix this and provide better error tracking capabilities for Pylon users.
-- [ ] **Integrate @getcronit/pylon-builder into @getcronit/pylon-dev:** The pylon-builder package is used to generate the schema from the service logic. Currently, this is a separate package that gets installed alongside the pylon-dev package. This means that there could be version mismatches between the two packages. To solve this, we would like to integrate the builder into the dev package so that they are always in sync. This will also make it easier to maintain and update the packages.
+- [ ] **Integrate @netsnek/psylon-builder into @netsnek/psylon-dev:** The pylon-builder package is used to generate the schema from the service logic. Currently, this is a separate package that gets installed alongside the pylon-dev package. This means that there could be version mismatches between the two packages. To solve this, we would like to integrate the builder into the dev package so that they are always in sync. This will also make it easier to maintain and update the packages.
 - [ ] **Spread the Word:** Spread the word about Pylon and get more people involved in the project. This includes writing blog posts, creating videos, and sharing the project on social media.
 
 ## Create
@@ -53,7 +59,7 @@ We would love to hear your feedback and suggestions for new features. Please ope
 To create a new Pylon project, run the following command:
 
 ```bash
-npm create pylon@latest
+npm create psylon@latest
 ```
 
 Afterwards, you can navigate to the newly created project and start the development server:
@@ -72,7 +78,7 @@ Open the [Pylon Playground](https://pylon.cronit.io/docs/getting-started#built-i
 Update your service logic in the `src` directory.
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Query: {

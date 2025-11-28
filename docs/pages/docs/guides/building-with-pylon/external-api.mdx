@@ -108,7 +108,7 @@ export default bookingStore
 Within the `index.ts` file, we introduced the class methods to our Pylon service:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import bookingStore from './lib/bookingStore'
 
 export const graphql = {
@@ -173,7 +173,7 @@ async getBookingIds(): Promise<{ bookingid: number }[]> {
 And that's just it! We have successfully implemented a method that fetches booking IDs from the external API. Introducing the method to our service is as simple as adding it to the `Query` object in the `index.ts` file:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import bookingStore from './lib/bookingStore'
 
 export const graphql = {

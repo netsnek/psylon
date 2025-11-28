@@ -11,18 +11,18 @@ import Authors, {Author} from '@components/authors'
   <Author name="Nico Schett" link="https://github.com/schettn" />
 </Authors>
 
-Welcome to `@getcronit/pylon@2.0.0` release (September 2024)!
+Welcome to `psylon@2.0.0` release (September 2024)!
 
 Pylon v2 introduces the support for different runtimes, a new create command, and an improved development server.
-The official supported runtimes by the `npm create pylon` command are Bun, Node.js and Cloudflare Workers. Other runtimes are also supported but require manual setup.
+The official supported runtimes by the `npm create psylon` command are Bun, Node.js and Cloudflare Workers. Other runtimes are also supported but require manual setup.
 We’ve tried to make migration smooth. Please refer to the [migration guide](/docs/release-notes/migrating-from-v1-to-v2.mdx) and [let us know](https://github.com/getcronit/pylon/issues/new/choose) if you encounter any issues when migrating.
 
 Key highlights of this release:
 
 - **New Runtimes**: Pylon now supports multiple runtimes, including Bun, Node.js and Cloudflare Workers.
-- **Unified Create Command**: The new `npm create pylon` command provides a consistent way to create new Pylon projects.
+- **Unified Create Command**: The new `npm create psylon` command provides a consistent way to create new Pylon projects.
 - **Improved Development Server**: The new `pylon dev` command provides a unified development experience across different runtimes.
-- **Drop of `pylon-cli` and `pylon-server`**: The `@getcronit/pylon-cli` and `@getcronit/pylon-server` packages are no longer required and replaced by the `@getcronit/pylon-dev` package.
+- **Drop of `pylon-cli` and `pylon-server`**: The `psylon-cli` and `psylon-server` packages are no longer required and replaced by the `@netsnek/psylon-dev` package.
 
 ## Breaking Changes
 
@@ -32,7 +32,7 @@ If you have any questions or need help, please don’t hesitate to [reach out to
 
 ## Overview Video
 
-Watch how we use the new `npm create pylon` command to create a new Pylon project and deploy it to Cloudflare Workers in less than 1 minute:
+Watch how we use the new `npm create psylon` command to create a new Pylon project and deploy it to Cloudflare Workers in less than 1 minute:
 
 <video
   muted=""
@@ -48,10 +48,10 @@ Watch how we use the new `npm create pylon` command to create a new Pylon projec
 
 Pylon now supports multiple runtimes, including Bun, Node.js and Cloudflare Workers. You can choose the runtime that best fits your use case and deploy your service with ease.
 
-To create a new Pylon project with a specific runtime, use the `npm create pylon` command:
+To create a new Pylon project with a specific runtime, use the `npm create psylon` command:
 
 ```bash
-npm create pylon --runtime cf-workers
+npm create psylon --runtime cf-workers
 ```
 
 This command creates a new Pylon project with the Cloudflare Workers runtime. You can also specify other runtimes, such as Node.js or Cloudflare Workers, by passing the `--runtime` flag.
@@ -74,13 +74,13 @@ _Be aware that those runtimes require manual setup and configuration._
 
 ## Unified Create Command
 
-The new `npm create pylon` command provides a consistent way to create new Pylon projects with different runtimes, templates, client generation and more.
+The new `npm create psylon` command provides a consistent way to create new Pylon projects with different runtimes, templates, client generation and more.
 This command streamlines the project creation process and ensures that you have everything you need to get started with Pylon.
 
 To create a new Pylon project, run the following command:
 
 ```bash
-npm create pylon
+npm create psylon
 ```
 
 This command will prompt you to select the runtime, template, and other options for your project. Once you’ve made your selections, the command will create a new Pylon project in the specified directory.
@@ -108,11 +108,11 @@ This command starts the development server with the `wrangler dev` command, whic
 
 ## Drop of `pylon-cli` and `pylon-server`
 
-The `@getcronit/pylon-cli` and `@getcronit/pylon-server` packages are no longer required and have been replaced by the `@getcronit/pylon-dev` package.
+The `psylon-cli` and `psylon-server` packages are no longer required and have been replaced by the `@netsnek/psylon-dev` package.
 
 **Why was the `pylon-cli` dropped?**
 
-The `pylon-cli` package was used to create new Pylon projects and manage the development server. With the introduction of the `npm create pylon` command and the `pylon dev` command, the functionality provided by the `pylon-cli` package is now handled by the `create-pylon` package and the `pylon-dev` package.
+The `pylon-cli` package was used to create new Pylon projects and manage the development server. With the introduction of the `npm create psylon` command and the `pylon dev` command, the functionality provided by the `pylon-cli` package is now handled by the `create-psylon` package and the `pylon-dev` package.
 
 **Why was the `pylon-server` dropped?**
 

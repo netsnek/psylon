@@ -1,0 +1,37 @@
+Psylon - Licensing
+==================
+
+Psylon is a Pylon v2 fork maintained by Netsnek e. U.
+
+The canonical public repository is located at:
+    https://github.com/netsnek/psylon
+
+Copyright (c) 2024 Netsnek e. U. and contributors.
+Based on work Copyright (c) 2024 Nico Schett <nico.schett@cronit.io>.
+
+This project is provided under:
+
+    SPDX-License-Identifier: EUPL-1.2
+
+The Psylon project as a whole is distributed under the terms of the European Union
+Public Licence version 1.2, as reproduced in:
+
+    LICENSES/preferred/EUPL-1.2
+
+This project also includes upstream code originally licensed under the
+Apache License, Version 2.0, which remains available under that licence.
+For those parts, see:
+
+    LICENSES/upstream/Apache-2.0
+    and the original file headers.
+
+Changes
+-------
+
+Psylon is a Pylon v2 fork, tuned to behave like its predecessor snek-functions
+and laser-focused on seamless microservice interoperability.
+
+Unlike Pylon v3, which aims to become a full-stack framework, Psylon is and
+will remain a GraphQL-based microservice framework. Security fixes and
+compatible behavioural changes from Pylon v3 that improve the v2 runtime will
+be backported to Psylon where appropriate.

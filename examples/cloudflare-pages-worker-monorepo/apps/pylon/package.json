@@ -8,11 +8,11 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@getcronit/pylon": "^2.0.0",
+    "psylon": "^2.0.0",
     "@repo/qrgrid": "workspace:*"
   },
   "devDependencies": {
-    "@getcronit/pylon-dev": "^1.0.0",
+    "@netsnek/psylon-dev": "^1.0.0",
     "@cloudflare/vitest-pool-workers": "^0.4.5",
     "@cloudflare/workers-types": "^4.20240903.0",
     "typescript": "^5.5.2",

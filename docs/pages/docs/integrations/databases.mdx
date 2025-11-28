@@ -15,7 +15,7 @@ Follow the setup instructions in the [Prisma documentation](https://www.prisma.i
 Here's an example of how to define a Pylon service using Prisma:
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import {PrismaClient} from '@prisma/client'
 
 const prisma = new PrismaClient()
@@ -97,7 +97,7 @@ The `Post`, `Author`, and `User` models are extended with additional fields and 
 Here's an example of how to use extended Prisma models in a Pylon service:
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import {Post} from '../repository/models'
 
 export const graphql = {
@@ -231,7 +231,7 @@ ENTRYPOINT [ "bun", "run", "./node_modules/.bin/pylon-server" ]
 For databases other than Prisma, such as MongoDB, developers need to define type interfaces separately and handle database operations accordingly. Here's an example of integrating MongoDB with Pylon:
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import {MongoClient} from 'mongodb'
 
 const uri = 'mongodb://localhost:27017'

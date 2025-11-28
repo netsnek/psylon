@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 // Example from https://beta.reactjs.org/learn
 
 import {useState} from 'react'

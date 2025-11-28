@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 export const Playground: React.FC = () => {
   return (
     <div className="absolute w-full left-0 h-[95%]">

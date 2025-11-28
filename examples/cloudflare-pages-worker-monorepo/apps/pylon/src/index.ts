@@ -1,4 +1,7 @@
-import {app, ServiceError} from '@getcronit/pylon'
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
+import {app, ServiceError} from 'psylon'
 import {generateQRCode} from '@repo/qrgrid'
 
 const qrCodeStorage: string[] = []

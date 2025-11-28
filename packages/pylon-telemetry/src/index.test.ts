@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { sendVersionEvent, sendDevEvent, sendBuildEvent, sendCreateEvent, sendFunctionEvent } from './index';
 
@@ -9,7 +12,7 @@ console.log = vi.fn();
 
 // Mock environment and other dependencies
 const mockEnv: Record<string, string | undefined> = {};
-vi.mock('@getcronit/pylon', async () => {
+vi.mock('psylon', async () => {
   return {
     getEnv: async () => mockEnv
   };

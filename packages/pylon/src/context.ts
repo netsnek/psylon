@@ -1,8 +1,11 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import {Context as HonoContext} from 'hono'
 import type {Toucan} from 'toucan-js'
 import {AuthState} from './auth'
 import {AsyncLocalStorage} from 'async_hooks'
-import {sendFunctionEvent} from '@getcronit/pylon-telemetry'
+import {sendFunctionEvent} from '@netsnek/psylon-telemetry'
 import {env} from 'hono/adapter'
 import type { GraphQLResolveInfo } from 'graphql'
 

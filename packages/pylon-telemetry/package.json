@@ -1,5 +1,5 @@
 {
-  "name": "@getcronit/pylon-telemetry",
+  "name": "@netsnek/psylon-telemetry",
   "type": "module",
   "version": "1.0.4",
   "main": "dist/index.js",

@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 // bundler.ts
 import fs from 'fs'
 import chokidar from 'chokidar'
@@ -65,7 +68,7 @@ export class Bundler {
                 contents:
                   contents +
                   `
-      import {handler as __internalPylonHandler} from "@getcronit/pylon"
+      import {handler as __internalPylonHandler} from "psylon"
 
       let __internalPylonConfig = undefined
 

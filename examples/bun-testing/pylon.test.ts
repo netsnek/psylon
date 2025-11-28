@@ -1,7 +1,10 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import {describe, expect, test} from 'bun:test'
 
 // Make sure to run `bun run build` before running this test
-import {handler} from '@getcronit/pylon'
+import {handler} from 'psylon'
 
 import app, {graphql} from './src/index'
 

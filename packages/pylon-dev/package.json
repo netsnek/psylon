@@ -1,5 +1,5 @@
 {
-  "name": "@getcronit/pylon-dev",
+  "name": "@netsnek/psylon-dev",
   "type": "module",
   "version": "1.0.6",
   "description": "CLI for creating a Pylon",
@@ -21,8 +21,8 @@
   },
   "homepage": "https://pylon.cronit.io",
   "dependencies": {
-    "@getcronit/pylon-builder": "workspace:^",
-    "@getcronit/pylon-telemetry": "workspace:^",
+    "@netsnek/psylon-builder": "workspace:^",
+    "@netsnek/psylon-telemetry": "workspace:^",
     "@gqty/cli": "^4.2.0",
     "commander": "^12.1.0",
     "consola": "^3.2.3",

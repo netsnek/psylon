@@ -1,6 +1,9 @@
 #!/usr/bin/env node
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
 
-import {build} from '@getcronit/pylon-builder'
+
+import {build} from '@netsnek/psylon-builder'
 import {fetchSchema, generateClient} from '@gqty/cli'
 import {program, type Command} from 'commander'
 import {consola} from 'consola'
@@ -8,7 +11,7 @@ import path from 'path'
 import {version} from '../package.json'
 import {ChildProcess, spawn} from 'child_process'
 import kill from 'treekill'
-import * as telemetry from '@getcronit/pylon-telemetry'
+import * as telemetry from '@netsnek/psylon-telemetry'
 import dotenv from 'dotenv'
 
 dotenv.config()

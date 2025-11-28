@@ -3,18 +3,18 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "description": "Generated with `npm create pylon`",
+  "description": "Generated with `npm create psylon`",
   "scripts": {
     "dev": "pylon dev -c \"bun run .pylon/index.js\"",
     "build": "pylon build"
   },
   "dependencies": {
-    "@getcronit/pylon": "workspace:^",
+    "psylon": "workspace:^",
     "bun-types": "^1.1.18",
     "graphql-parse-resolve-info": "^4.13.0"
   },
   "devDependencies": {
-    "@getcronit/pylon-dev": "workspace:^"
+    "@netsnek/psylon-dev": "workspace:^"
   },
   "repository": {
     "type": "git",
