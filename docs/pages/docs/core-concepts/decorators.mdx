@@ -8,10 +8,10 @@ Pylon provides a decorator factory `createDecorator` that allows you to create c
 
 ## Creating a Decorator
 
-To create a decorator, you can use the `createDecorator` function from the `@getcronit/pylon` package. This function takes a callback function as an argument, which will be executed when the decorator is applied to a service function.
+To create a decorator, you can use the `createDecorator` function from the `psylon` package. This function takes a callback function as an argument, which will be executed when the decorator is applied to a service function.
 
 ```typescript
-import {app, createDecorator} from '@getcronit/pylon'
+import {app, createDecorator} from 'psylon'
 
 const log = createDecorator(async () => {
   console.log('Executing service function')
@@ -34,7 +34,7 @@ In this example, the `log` decorator logs a message when the `foo` service funct
 To apply a decorator to a service function, you can use the decorator syntax provided by TypeScript. Decorators can be applied to class methods, static methods, or properties.
 
 ```typescript
-import {app, createDecorator} from '@getcronit/pylon'
+import {app, createDecorator} from 'psylon'
 
 const log = createDecorator(async () => {
   console.log('Executing service function')
@@ -93,7 +93,7 @@ export default app
 You can also apply decorators by calling the decorator function directly.
 
 ```typescript
-import {app, createDecorator} from '@getcronit/pylon'
+import {app, createDecorator} from 'psylon'
 
 const log = createDecorator(async () => {
   console.log('Executing service function')
@@ -113,7 +113,7 @@ export const graphql = {
 You can use decorators to validate the arguments of a service function. This can be useful for enforcing e.g. password requirements.
 
 ```typescript
-import {app, createDecorator, ServiceError} from '@getcronit/pylon'
+import {app, createDecorator, ServiceError} from 'psylon'
 
 const validatePassword = createDecorator(
   async (username: string, password: string) => {
@@ -148,7 +148,7 @@ All Hono middleware functions can be used inside decorators. This allows you to 
 For example, you can use the `basicAuth` middleware to require authentication for a service function.
 
 ```typescript
-import {app, createDecorator, getContext} from '@getcronit/pylon'
+import {app, createDecorator, getContext} from 'psylon'
 import {basicAuth} from 'hono/basic-auth'
 
 const authMiddleware = basicAuth({
@@ -187,7 +187,7 @@ Take a look at the [Hono documentation](https://hono.dev/docs/middleware/builtin
 You can also use decorators as middleware functions for routes. This allows you to apply the same middleware to multiple routes.
 
 ```typescript
-import {app, createDecorator, getContext} from '@getcronit/pylon'
+import {app, createDecorator, getContext} from 'psylon'
 import {basicAuth} from 'hono/basic-auth'
 
 const requireBasicAuth = createDecorator(async () => {

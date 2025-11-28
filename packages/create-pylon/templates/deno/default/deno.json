@@ -1,7 +1,7 @@
 {
   "imports": {
-    "@getcronit/pylon-dev": "npm:@getcronit/pylon-dev@^1.0.1",
-    "@getcronit/pylon": "npm:@getcronit/pylon@^2.2.1"
+    "@netsnek/psylon-dev": "npm:@netsnek/psylon-dev@^1.0.1",
+    "psylon": "npm:psylon@^2.2.1"
   },
   "tasks": {
     "dev": "pylon dev -c 'deno run -A .pylon/index.js --config tsconfig.json'",

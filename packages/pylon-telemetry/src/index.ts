@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 import crypto from 'crypto'
 import os from 'os'
 
@@ -9,7 +12,7 @@ import.meta.require ||= id => createImportMetaRequire(import.meta.url)(id)
 
 // @ts-ignore
 // prettier-ignore
-const getEnv = async (...args) => await import('@getcronit/pylon').then(m => m.getEnv(...args)).catch(() => process.env)
+const getEnv = async (...args) => await import('psylon').then(m => m.getEnv(...args)).catch(() => process.env)
 
 // @ts-ignore
 // prettier-ignore
@@ -56,11 +59,11 @@ const versionOrUndefined = (name: string): string => {
 }
 
 export const getVersions = () => {
-  const telemetryVersion = versionOrUndefined('@getcronit/pylon-telemetry')
-  const pylonDevVersion = versionOrUndefined('@getcronit/pylon-dev')
+  const telemetryVersion = versionOrUndefined('@netsnek/psylon-telemetry')
+  const pylonDevVersion = versionOrUndefined('@netsnek/psylon-dev')
 
-  const pylonVersion = versionOrUndefined('@getcronit/pylon')
-  const pylonBuilderVersion = versionOrUndefined('@getcronit/pylon-builder')
+  const pylonVersion = versionOrUndefined('psylon')
+  const pylonBuilderVersion = versionOrUndefined('@netsnek/psylon-builder')
 
   return {
     telemetryVersion,

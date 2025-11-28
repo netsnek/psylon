@@ -1,5 +1,5 @@
 {
-  "extends": "@getcronit/pylon/tsconfig.pylon.json",
+  "extends": "psylon/tsconfig.pylon.json",
   "compilerOptions": {
     // add Bun type definitions
     "types": ["bun-types"]

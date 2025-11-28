@@ -168,7 +168,7 @@ export default bookingStore
 Now, the only thing left to do is to notify Pylon about our new class methods. For this, the `index.ts` file is the place to go. Currently, the file should look like this:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -183,7 +183,7 @@ export default app
 Since we dont need the `hello` resolver anymore, we can remove it and import the `bookingStore` instance. We can then add the `getBookings` and `getBookingById` methods to the `Query` object:
 
 ```typescript copy
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import bookingStore from './lib/bookingStore'
 
 export const graphql = {

@@ -85,13 +85,13 @@ This service includes endpoints to:
 ### Install Pylon Dependencies
 **Bun:**
 ```sh
-bun add -D @getcronit/pylon-dev
-bun add @getcronit/pylon
+bun add -D @netsnek/psylon-dev
+bun add psylon
 ```
 **Node**:
 ```sh
-npm install --save-dev @getcronit/pylon-dev
-bun add @getcronit/pylon
+npm install --save-dev @netsnek/psylon-dev
+bun add psylon
 ```
 
 ### Update `package.json` Scripts
@@ -116,9 +116,9 @@ Add the following scripts to your `package.json`:
 ### Create `pylon.d.ts`
 Create a file named `pylon.d.ts` in your project root with the following content:
 ```typescript
-import '@getcronit/pylon'
+import 'psylon'
 
-declare module '@getcronit/pylon' {
+declare module 'psylon' {
   interface Bindings {}
 
   interface Variables {}
@@ -132,7 +132,7 @@ Modify your `tsconfig.json` to extend Pylon's TypeScript configuration:
 **Bun:**
 ```json
 {
-  "extends": "@getcronit/pylon/tsconfig.pylon.json",
+  "extends": "psylon/tsconfig.pylon.json",
   "compilerOptions": {
     "types": ["bun-types"]
   },
@@ -142,7 +142,7 @@ Modify your `tsconfig.json` to extend Pylon's TypeScript configuration:
 **Node**:
 ```json
 {
-  "extends": "@getcronit/pylon/tsconfig.pylon.json",
+  "extends": "psylon/tsconfig.pylon.json",
   "include": ["pylon.d.ts", "src/**/*.ts"]
 }
 ```
@@ -278,7 +278,7 @@ const app = new Hono()
 ```
 **Updated Code**
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 ```
 
 ### Add Type Definitions

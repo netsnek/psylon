@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 /**
  * GQty AUTO-GENERATED CODE: PLEASE DO NOT MODIFY MANUALLY
  */

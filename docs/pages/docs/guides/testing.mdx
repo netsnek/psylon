@@ -2,7 +2,7 @@ import {Callout} from '@components/callout'
 
 # Testing
 
-**Note:** This guide assumes you have already created a Pylon project using `npm create pylon@latest` or have an existing Pylon project. We will be modifying the existing `src/index.ts` file in your project.
+**Note:** This guide assumes you have already created a Pylon project using `npm create psylon@latest` or have an existing Pylon project. We will be modifying the existing `src/index.ts` file in your project.
 
 For testing, we'll be using the Bun test runner, which is recommended for Pylon projects. However, you can use other test runners of your choice if preferred.
 
@@ -15,7 +15,7 @@ If you use `bun run dev`, while making changes to your application, the `.pylon/
 First, let's modify the `src/index.ts` file to set up a basic Pylon application with an empty posts array.
 
 ```typescript project="Pylon App" file="src/index.ts"
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 const posts: {id: number; title: string; content: string}[] = []
 
@@ -29,7 +29,7 @@ This sets up the foundation for our Pylon application. We've imported the `app` 
 Now, let's implement the GraphQL query to fetch posts. Modify your `src/index.ts` file as follows:
 
 ```typescript project="Pylon App" file="src/index.ts"
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 const posts: {id: number; title: string; content: string}[] = [
   {
@@ -112,7 +112,7 @@ bun test
 Let's implement the GraphQL mutation to create posts. Update your `src/index.ts` file:
 
 ```typescript project="Pylon App" file="src/index.ts"
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 const posts: {id: number; title: string; content: string}[] = [
   {
@@ -237,7 +237,7 @@ bun test
 Now, let's implement the REST API endpoint to fetch posts. Update your `src/index.ts` file:
 
 ```typescript project="Pylon App" file="src/index.ts"
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 const posts: {id: number; title: string; content: string}[] = [
   {
@@ -319,7 +319,7 @@ bun test
 Finally, let's implement the REST API endpoint to create posts. Update your `src/index.ts` file:
 
 ```typescript project="Pylon App" file="src/index.ts"
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 const posts: {id: number; title: string; content: string}[] = [
   {
@@ -537,7 +537,7 @@ In some cases, you might want to mock certain files or modules during testing. T
 However, when using `./src/index.ts` directly, you need to manually set up the `handler` to handle GraphQL requests.
 
 ```typescript
-import {handler} from '@getcronit/pylon'
+import {handler} from 'psylon'
 
 import app, {graphql} from './src/index'
 
@@ -551,7 +551,7 @@ This setup allows you to directly import and use the `./src/index.ts` file in yo
 If you use the `config` export in your `./src/index.ts` file, you can also pass it to the `handler` function:
 
 ```typescript
-import {handler} from '@getcronit/pylon'
+import {handler} from 'psylon'
 
 import app, {graphql, config} from './src/index'
 

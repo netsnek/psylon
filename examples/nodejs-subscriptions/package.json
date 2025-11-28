@@ -3,17 +3,17 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "description": "Generated with `npm create pylon`",
+  "description": "Generated with `npm create psylon`",
   "scripts": {
     "dev": "pylon dev -c \"node --enable-source-maps .pylon/index.js\"",
     "build": "pylon build"
   },
   "dependencies": {
-    "@getcronit/pylon": "workspace:^",
+    "psylon": "workspace:^",
     "@hono/node-server": "^1.12.2"
   },
   "devDependencies": {
-    "@getcronit/pylon-dev": "workspace:^"
+    "@netsnek/psylon-dev": "workspace:^"
   },
   "repository": {
     "type": "git",

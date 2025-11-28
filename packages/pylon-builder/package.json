@@ -1,5 +1,5 @@
 {
-  "name": "@getcronit/pylon-builder",
+  "name": "@netsnek/psylon-builder",
   "version": "2.6.9",
   "type": "module",
   "main": "dist/index.js",

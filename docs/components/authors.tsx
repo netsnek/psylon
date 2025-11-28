@@ -1,3 +1,6 @@
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
 export default function Authors({date, children}) {
   return (
     <div className="mb-16 mt-8 text-sm text-gray-400">

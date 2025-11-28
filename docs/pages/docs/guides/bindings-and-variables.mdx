@@ -5,14 +5,14 @@ In this guide, you will learn how to use bindings and variables in your Pylon pr
 ## pylon.d.ts
 
 The `pylon.d.ts` file is a TypeScript declaration file that provides type definitions for the Pylon. It is automatically included in your project when you have created
-your project using `npm create pylon@latest`.
+your project using `npm create psylon@latest`.
 If your project does not have the `pylon.d.ts` file yey, you can set it up manually by creating a new file in the root of your project and naming it `pylon.d.ts`.
 
 ```typescript
 // pylon.d.ts
-import '@getcronit/pylon'
+import 'psylon'
 
-declare module '@getcronit/pylon' {
+declare module 'psylon' {
   interface Bindings {}
 
   interface Variables {}
@@ -35,7 +35,7 @@ You can think of bindings as a different term for environment variables that are
 
 ```typescript
 // src/index.ts
-import {app, getContext} from '@getcronit/pylon'
+import {app, getContext} from 'psylon'
 
 export const graphql = {
   hello: () => {
@@ -60,9 +60,9 @@ In the `pylon.d.ts` file, you can add your bindings like this:
 
 ```typescript
 // pylon.d.ts
-import '@getcronit/pylon'
+import 'psylon'
 
-declare module '@getcronit/pylon' {
+declare module 'psylon' {
   interface Bindings {
     SECRET: string
   }
@@ -84,7 +84,7 @@ Variables are used to store date inside the request context. Set variables are t
 ```typescript
 // src/index.ts
 
-import {app, getContext} from '@getcronit/pylon'
+import {app, getContext} from 'psylon'
 
 export const graphql = {
   hello: () => {
@@ -120,9 +120,9 @@ In the `pylon.d.ts` file, you can add your variables like this:
 
 ```typescript
 // pylon.d.ts
-import '@getcronit/pylon'
+import 'psylon'
 
-declare module '@getcronit/pylon' {
+declare module 'psylon' {
   interface Bindings {
     SECRET: string
   }

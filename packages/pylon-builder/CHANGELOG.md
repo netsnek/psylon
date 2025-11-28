@@ -1,4 +1,4 @@
-# @getcronit/pylon-builder
+# @netsnek/psylon-builder
 
 ## 2.6.9
 

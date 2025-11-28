@@ -1,4 +1,7 @@
-import {app, getContext} from '@getcronit/pylon'
+// Copyright 2024 Nico Schett <nico.schett@cronit.io>
+// SPDX-License-Identifier: Apache-2.0
+
+import {app, getContext} from 'psylon'
 import {drizzle} from 'drizzle-orm/d1'
 import * as crypto from 'crypto'
 

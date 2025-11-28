@@ -13,7 +13,7 @@ Pylon leverages [Hono](https://hono.dev/), a fast and lightweight web framework,
 The `app` instance in Pylon represents the Hono application and provides a central point for defining routes, middleware, and other application-specific configurations. By accessing the `app` instance, you can define custom logic and behavior tailored to your application's requirements.
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -51,7 +51,7 @@ To avoid this, all other routers should be created as sub-routers using a new Ho
 `/src/authRouter.ts`:
 
 ```typescript
-import {type Bindings, type Variables} from '@getcronit/pylon'
+import {type Bindings, type Variables} from 'psylon'
 import {Hono} from 'hono'
 
 const authRouter = new Hono<{
@@ -69,7 +69,7 @@ export default authRouter
 `/src/index.ts`:
 
 ```typescript
-import {app} from '@getcronit/pylon'
+import {app} from 'psylon'
 import authRouter from './authRouter'
 
 app.route('/auth', authRouter)
@@ -87,10 +87,10 @@ Service functions in Pylon often require access to request-specific data or cont
 
 ### `getContext` Function
 
-The `getContext` function from the `@getcronit/pylon` package enables service functions to access the request context. This includes request headers, parameters, and other relevant information necessary for processing incoming requests.
+The `getContext` function from the `psylon` package enables service functions to access the request context. This includes request headers, parameters, and other relevant information necessary for processing incoming requests.
 
 ```typescript
-import {app, getContext} from '@getcronit/pylon'
+import {app, getContext} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -116,7 +116,7 @@ Depending on your runtime enviroment, handling enviroment variables might differ
 Pylon provides the `getEnv` function to access enviroment variables in a runtime-agnostic way.
 
 ```typescript
-import {getEnv} from '@getcronit/pylon'
+import {getEnv} from 'psylon'
 
 export const graphql = {
   Query: {
@@ -137,9 +137,9 @@ Pylon allows you to define custom bindings and variables types to store sensitiv
 
 ```typescript
 // pylon.d.ts
-import '@getcronit/pylon'
+import 'psylon'
 
-declare module '@getcronit/pylon' {
+declare module 'psylon' {
   interface Bindings {
     SECRET_KEY: string
   }
