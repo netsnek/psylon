@@ -4,15 +4,12 @@
   </a>
 </p>
 
-![Psylon cover](https://github.com/user-attachments/assets/c28e49b2-5672-4849-826e-8b2eab0360cc)
 
 <div align="center"><strong>Psylon</strong></div>
 <div align="center">The next generation of building APIs.<br />Automatic schema generation for your service logic.</div>
-<div align="center">Psylon is brought to you by Netsnek.</div>
-<div align="center"><strong>Professional Support:</strong> For professional support and consulting services, contact <a href="mailto:office@netsnek.com">office@netsnek.com</a>.</div>
 <br />
 <div align="center">
-<a href="https://pylon.cronit.io">Website</a>
+<a href="https://netsnek.com">Website</a>
 <span> · </span>
 <a href="https://github.com/netsnek/psylon">GitHub</a>
 <span> · </span>
