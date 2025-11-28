@@ -51,7 +51,7 @@ program
   .option(
     '--client-path <clientPath>',
     'Path to generate the client to',
-    'psylon/index.ts'
+    'pgqty/index.ts'
   )
   .option(
     '--client-port <clientPort>',
