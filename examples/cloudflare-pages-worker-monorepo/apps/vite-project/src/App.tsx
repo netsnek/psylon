@@ -4,7 +4,7 @@
 import pylonLogo from '/pylon.svg'
 import './App.css'
 
-import {resolve, useQuery} from '../gqty'
+import {resolve, useQuery} from '../pgqty'
 
 function App() {
   const data = useQuery()

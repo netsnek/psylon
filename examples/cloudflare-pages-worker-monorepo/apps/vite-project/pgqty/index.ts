@@ -2,16 +2,16 @@
 // SPDX-License-Identifier: Apache-2.0
 
 /**
- * GQty: You can safely modify this file based on your needs.
+ * pgqty: You can safely modify this file based on your needs.
  */
 
-import {createReactClient} from '@gqty/react'
+import {createReactClient} from '@pgqty/react'
 import {
   Cache,
   createClient,
   defaultResponseHandler,
   type QueryFetcher
-} from 'gqty'
+} from 'pgqty'
 import {
   generatedSchema,
   scalarsEnumsHash,

@@ -1,0 +1,4 @@
+{
+  "extends": "psylon/tsconfig.pylon.json",
+  "include": ["psylon.d.ts", "worker-configuration.d.ts", "src/**/*.ts"]
+}

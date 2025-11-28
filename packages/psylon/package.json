@@ -1,6 +1,6 @@
 {
   "name": "psylon",
-  "version": "2.9.6",
+  "version": "2.10.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/getcronit/pylon.git",
-    "directory": "packages/pylon"
+    "directory": "packages/psylon"
   },
   "homepage": "https://pylon.cronit.io",
   "dependencies": {

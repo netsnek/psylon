@@ -49,10 +49,23 @@ to Psylon where appropriate.
 
 Canonical repository: https://github.com/netsnek/psylon
 
+## Version lineage
+
+Psylon is a fork of Pylon v2.
+
+- `pylon@2.9.6` – last upstream Pylon v2 release from @schettn under the `@getcronit` scope.
+- `psylon@2.9.6` – first Psylon release, based on `pylon@2.9.6` with rebranding, new package names,
+  and essentially the same feature set as that upstream release.
+- `psylon@2.9.7` and later – new releases maintained by Netsnek e. U. under the `psylon` and
+  `@netsnek/*` package names.
+
+From `psylon@2.9.6` onwards, the histories diverge: Psylon keeps the Pylon v2 runtime, focuses on
+GraphQL-based microservices, and selectively backports security fixes and compatible improvements
+from Pylon v3.
+
 ## Roadmap
 
-Psylons roadmap is centered around GraphQL via GQty and its pgqty fork.
-For current plans and discussion, see
+Psylon uses pgqty (a fork of GQty) as its GraphQL client layer. For current plans and discussion, see
 [gqty-dev/gqty#2051](https://github.com/gqty-dev/gqty/issues/2051).
 
 ## Create

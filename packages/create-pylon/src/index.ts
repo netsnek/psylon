@@ -290,7 +290,7 @@ program
   .addOption(
     new Option(
       '--client',
-      'Enable client generation (https://pylon.cronit.io/docs/integrations/gqty)'
+      'Enable client generation (https://pylon.cronit.io/docs/integrations/pgqty)'
     )
   )
   .addOption(new Option('--client-path <clientPath>', 'Client path'))
@@ -433,7 +433,7 @@ async function main(
       clientArg ||
       (await confirm({
         message:
-          'Would you like to enable client generation? (https://pylon.cronit.io/docs/integrations/gqty)',
+          'Would you like to enable client generation? (https://pylon.cronit.io/docs/integrations/pgqty)',
         default: false
       }))
 
@@ -450,7 +450,7 @@ async function main(
 
         clientPath = await input({
           message: 'Path to generate the client to',
-          default: path.join(clientRoot, 'gqty/index.ts'),
+          default: path.join(clientRoot, 'psylon/index.ts'),
           validate: value => {
             // Check if the path starts with the client root (take care of .)
             if (!value.startsWith(clientRoot === '.' ? '' : clientRoot)) {
