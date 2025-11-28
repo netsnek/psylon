@@ -1,10 +1,10 @@
 {
-  "name": "pylon",
+  "name": "psylon-worker",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "deploy": "pylon build && wrangler deploy",
-    "dev": "pylon dev -c 'wrangler dev' --client --client-port 8787 --client-path ../vite-project/gqty/index.ts",
+    "dev": "pylon dev -c 'wrangler dev' --client --client-port 8787 --client-path ../vite-project/pgqty/index.ts",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/getcronit/pylon.git"
+    "url": "https://github.com/netsnek/psylon.git"
   },
-  "homepage": "https://pylon.cronit.io"
+  "homepage": "https://psylon.dev"
 }

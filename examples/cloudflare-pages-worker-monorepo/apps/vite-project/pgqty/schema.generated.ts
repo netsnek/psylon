@@ -2,10 +2,10 @@
 // SPDX-License-Identifier: Apache-2.0
 
 /**
- * GQty AUTO-GENERATED CODE: PLEASE DO NOT MODIFY MANUALLY
+ * pgqty AUTO-GENERATED CODE: PLEASE DO NOT MODIFY MANUALLY
  */
 
-import {type ScalarsEnumsHash} from 'gqty'
+import {type ScalarsEnumsHash} from 'pgqty'
 
 export type Maybe<T> = T | null
 export type InputMaybe<T> = Maybe<T>

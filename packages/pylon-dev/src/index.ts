@@ -4,7 +4,7 @@
 
 
 import {build} from '@netsnek/psylon-builder'
-import {fetchSchema, generateClient} from '@gqty/cli'
+import {fetchSchema, generateClient} from '@pgqty/cli'
 import {program, type Command} from 'commander'
 import {consola} from 'consola'
 import path from 'path'
@@ -51,7 +51,7 @@ program
   .option(
     '--client-path <clientPath>',
     'Path to generate the client to',
-    'gqty/index.ts'
+    'pgqty/index.ts'
   )
   .option(
     '--client-port <clientPort>',
